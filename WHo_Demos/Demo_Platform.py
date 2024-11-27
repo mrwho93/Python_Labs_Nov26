@@ -18,3 +18,8 @@ print(platform.machine())
 print(platform.architecture())
 print(platform.node())
 print(platform.python_implementation())
+
+try:
+    sys.exit(0) # Exit program with Return Code (0=success , 1-255=error code)
+except SystemError:
+    print("")
