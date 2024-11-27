@@ -22,7 +22,7 @@ lotto = set() # PYTHONIC solution.
 while len(lotto)<6:
         num=random.randint(1,50)
         lotto.add(num)
-print("Lotter numbers =", lotto)        
+print("Lotter numbers =", sorted(lotto))       
 
         
 
