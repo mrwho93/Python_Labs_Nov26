@@ -3,13 +3,15 @@
 # Version: 1.0
 # Description: This script will simulate a high street bank PIN machine
 
+import getpass
+
 master_pin = "0123"
 pin = None
 attempts = 0
 
 while pin != master_pin and attempts < 3:
-    pin = input("Enter PIN: ")
-    if pin == master_pin:
+    pin = getpass.getpass("Enter PIN: ")
+    if pin == master_pin:1
         print("Valid PIN")
         break
     else:
